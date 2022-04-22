@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+/* font-family: 'Outfit', sans-serif; */
+
+/* Colors */
+:root {
+  /* Primary */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* Neutral */
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --darkest-blue-shadow: hsl(216, 27%, 7%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+main {
+  display: flex;
+}
+
+body {
+  background-color: rgb(170, 170, 0);
+  font-family: "Outfit", sans-serif;
+}
+
+.card-container {
+  width: 37.2rem;
+  height: 51.97rem;
+  background-image: url(images/electric-bg.png);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  border: 1.5rem solid gold;
+  border-radius: 1.55rem;
+  box-shadow: 0.5rem 0.5rem 1.2rem 0.5rem var(--darkest-blue-shadow);
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-header {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.205rem;
+}
+
+.pokemon-name {
+  font-size: 2.8rem;
+  color: black;
+}
+
+.hp-type {
+  display: flex;
+  gap: 1rem;
+}
+
+.hp {
+  font-size: 2.5rem;
+  color: red;
+}
+
+.type-icon {
+  width: 2.9rem;
+  height: 2.9rem;
+}
+
+.main-image {
+  width: 100%;
+  height: 200px;
+  border: 0.75rem solid goldenrod;
+  box-shadow: 0.5rem 0.5rem 2.5rem 0.5rem var(--darkest-blue-shadow);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-text {
+  font-style: italic;
+  font-size: 1.3rem;
+  text-align: center;
+  color: black;
+  background-color: rgb(180, 141, 43);
+}
+
+.moveset {
+  display: flex;
+  align-items: center;
+}
+
+.move-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.move-description {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+.move {
+  font-size: 1.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.move-damage {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+hr {
+  background-color: black;
+  height: 0.2rem;
+  border: none;
+}
+
+.weakness-resistance {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weakness-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.retreat-cost-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trivia {
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  border: 3px solid goldenrod;
+}
+
+.attribution {
+  color: var(--white);
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+a:link,
+a:visited {
+  color: var(--soft-blue);
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--white);
+}
